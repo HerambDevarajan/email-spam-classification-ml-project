@@ -33,7 +33,7 @@ def transform_text(text):
     return " ".join(word_list)
 
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
-model = pickle.load(open('model.pkl','rb'))
+model = pickle.load(open('model1.pkl','rb'))
 
 def main():
     st.title("Email Spam Classifier")
