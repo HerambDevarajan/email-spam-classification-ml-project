@@ -28,4 +28,5 @@ This project implements an Email Spam Classifier using a Voting Classifier based
 
 ## Project Link
 
-Visit the hosted email spam classification project on Streamlit: [Email Spam Classifier]([https://email-spam-classification-ml-project.streamlit.app])
+Visit the hosted email spam classification project on Streamlit: [Email Spam Classifier](https://email-spam-classification-ml-project.streamlit.app)
+
