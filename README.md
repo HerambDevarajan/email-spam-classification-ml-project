@@ -20,10 +20,12 @@ This project implements an Email Spam Classifier using a Voting Classifier based
    git clone https://github.com/yourusername/email-spam-classifier.git
    cd email-spam-classifier
 2. Install dependencies:
-   '''bash pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 3. Run the Streamlit app:
-   ''' bash streamlit run app.py
+   ```bash
+   streamlit run app.py
 
 ## Project Link
 
-Visit the project on Streamlit: [Email Spam Classifier](https://your-streamlit-project-link.com)
+Visit the hosted email spam classification project on Streamlit: [Email Spam Classifier]([https://your-streamlit-project-link.com](https://email-spam-classification-ml-project.streamlit.app)https://email-spam-classification-ml-project.streamlit.app)
