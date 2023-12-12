@@ -44,19 +44,19 @@ def main():
 
     # Predict button
     if st.button("Predict"):
-        # Display the entered text below the button
-        transformed_email=transform_text(heading_text)
-        #print(transformed_email)
+        transformed_email = transform_text(heading_text)
         vector_input = tfidf.transform([transformed_email]).toarray()
         result = model.predict(vector_input)[0]
-        outtext=""
-        if result==1:
-            outtext="Spam"
-        else:
-            outtext="Not Spam"
+        outtext = "Spam" if result == 1 else "Not Spam"
         probabilities = model.predict_proba(vector_input)[0]
         probability_spam = probabilities[1]  # Probability of being spam
-        st.success(f"Entered Text: {outtext}")
+
+        # Display the prediction result
+        st.subheader("Prediction Result:")
+        st.success(f"The entered text is: **{outtext}**")
+
+        # Display the probability of being spam
+        st.success(f"Probability of Being Spam: {probability_spam * 100:.2f}%")
 
 if __name__ == "__main__":
     main()
